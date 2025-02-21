@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">g</string>
+    <string name="todo">TODO</string>
+    <string name="admin_login">Admin Login</string>
+    <string name="student_login">Student Login</string>
+    <string name="or">OR</string>
+    <string name="feesavvy">feeSavvy</string>
+    <string name="signup">SignUp</string>
+    <string name="SignUp">Don\'t have an account ? SignUp</string>
+    <string name="app_nam">Navigation Drawer</string>
+    <string name="open_nav">Open Navigation Drawer</string>
+    <string name="close_nav">Close Navigation Drawer</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="about_description">
+        Welcome to FeeSavvy, your comprehensive fee management solution designed to revolutionize how educational institutions and organizations handle fee collection and financial management. With a commitment to efficiency, transparency, and convenience, FeeSavvy empowers institutions to effortlessly manage fees, streamline processes, and ensure a smooth financial experience for all stakeholders.
+    </string>
+
+
+    <string-array name="year">
+        <item>1st year</item>
+        <item>2nd Year</item>
+        <item>3rd Year</item>
+
+    </string-array>
+</resources>

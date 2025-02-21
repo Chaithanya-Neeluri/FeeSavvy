@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/addstudent"
+        android:minHeight="750dp"
+        tools:context=".SettingsFragment">
+
+
+        <TextView
+            android:layout_width="208dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="92dp"
+            android:text="Update Year"
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="340dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="200dp"
+            android:hint="Select Batch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:inputType="none"
+                android:textSize="13dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="340dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:hint="Select Change Year"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:inputType="none"
+                android:textSize="16dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInput"
+            android:layout_width="351dp"
+            android:layout_height="59dp"
+            android:layout_margin="16dp"
+            android:hint="Enter Student Pin Number"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.456"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterpinno"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:textSize="13dp"
+                android:background="@drawable/et_style"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/view"
+            android:layout_width="249dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="#286A9E"
+            android:text="Update by Batch"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInput"
+            tools:ignore="TextSizeCheck" />
+
+
+        <Button
+            android:id="@+id/bypinno"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="132dp"
+            android:backgroundTint="#286A9E"
+            android:text="Update by PinNo"
+            android:textSize="14dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:layout_constraintVertical_bias="0.25"
+            tools:ignore="TextSizeCheck" />
+
+        <Button
+            android:id="@+id/viewpinno"
+            android:layout_width="249dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="28dp"
+            android:backgroundTint="#286A9E"
+            android:text="Update by PinNo"
+            android:textSize="14dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInput" />
+
+        <Button
+            android:id="@+id/bybatch"
+            android:layout_width="248dp"
+            android:layout_height="48dp"
+            android:layout_marginBottom="116dp"
+            android:backgroundTint="#286A9E"
+            android:text="Update by Batch"
+            android:textSize="14dp"
+
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.509"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/viewpinno"
+            app:layout_constraintVertical_bias="0.166" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="340dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="20dp"
+            android:hint="Select Branch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.491"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:inputType="none"
+                android:textSize="13dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ProgressBar
+            android:id="@+id/verificationProgressBar"
+            android:layout_width="110dp"
+            android:layout_height="72dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="464dp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="@+id/userList"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.462"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

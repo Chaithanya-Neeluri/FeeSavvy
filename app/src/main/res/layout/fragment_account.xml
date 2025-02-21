@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AccountFragment">
+
+
+
+        <!-- TODO: Update blank fragment layout -->
+
+        <TextView
+            android:id="@+id/account1"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:width="0dp"
+            android:height="0dp"
+            android:background="#FFFFF5"
+            android:fontFamily="monospace"
+            android:paddingTop="8dp"
+            android:text="Account Details"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/account2"
+            android:layout_width="124dp"
+            android:layout_height="126dp"
+            android:layout_marginLeft="125dp"
+            android:layout_marginTop="70dp"
+            android:src="@drawable/image123" />
+        <TextView
+            android:id="@+id/pinno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="210dp"
+            android:fontFamily="sans-serif"
+            android:text="Pin Number"
+            android:textAlignment="center"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/account4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="270dp"
+            android:fontFamily="sans-serif"
+            android:text="Student Name            :"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="228dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginTop="270dp"
+
+            android:fontFamily="sans-serif"
+            android:text="Student_Name"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/account5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="sans-serif"
+            android:text="Department Name     :"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/Depname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="300dp"
+            android:fontFamily="sans-serif"
+            android:text="Department_Name"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/account6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="sans-serif"
+            android:text="Year                               :"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/year"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="330dp"
+            android:fontFamily="sans-serif"
+            android:text="Year"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/account7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="360dp"
+            android:fontFamily="sans-serif"
+            android:text="College Code               :"
+            android:textSize="16dp"
+            />
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="175dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="360dp"
+            android:fontFamily="sans-serif"
+            android:text="College_Code"
+            android:textSize="16dp"
+            android:textStyle="bold"/>
+        <TextView
+            android:id="@+id/account8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="390dp"
+            android:fontFamily="sans-serif"
+            android:text="College Name             :"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/clgname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="420dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="College_Name"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_marginTop="250dp"
+            android:layout_height="2dp"
+            android:background="?android:attr/listDivider" />
+
+</FrameLayout>

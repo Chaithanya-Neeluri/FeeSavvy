@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="730dp"
+        tools:context=".PaymentFragment">
+
+        <!-- TODO: Update blank fragment layout -->
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:width="0dp"
+            android:height="0dp"
+            android:background="#FFFFF5"
+            android:fontFamily="monospace"
+            android:paddingTop="8dp"
+            android:text="Payment"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/payment1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="30dp"
+            android:fontFamily="sans-serif"
+            android:text="Student Name  :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Student_Name"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/payment3"
+            android:layout_width="173dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="0dp"
+            android:fontFamily="sans-serif"
+            android:text="Pin Number       :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pinno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Pin_Number"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/payment5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Fee Details         :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/payment7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="2nd Year Fee      "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tutionfee2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Tution Fee          :"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/f2tution"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="340dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Fee"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/nongovtfee2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="NonGovt Fee     :"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/f2nongovt"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="360dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="fee"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/firstbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="250dp"
+            android:backgroundTint="#286A9E"
+            android:text="Tap to Pay Your 1st Year Fees Now"
+            android:textSize="14dp"
+            tools:ignore="TextSizeCheck,TextSizeCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/payment810"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Status                 :"
+            android:textSize="16dp"
+
+            />
+
+        <TextView
+            android:id="@+id/f2status"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="380dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="paid"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/secondbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="410dp"
+            android:backgroundTint="#286A9E"
+            android:text="Tap to Pay Your 2nd Year Fees Now"
+            android:textSize="14dp"
+            tools:ignore="TextSizeCheck,TextSizeCheck,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/payment11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="470dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="3rd Year Fee      "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tutionfee67"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Tution Fee          :"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/f3tution"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Fee"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/nongovtfee436"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="NonGovt Fee     :"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/f3nongovt"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="520dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="fee"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/payment8gdf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Status                 :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/f3status"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="540dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="paid"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/payment6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="150dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="1st Year Fee      "
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/tutionfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Tution Fee          :"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/f1tution"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Fee"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/nongovtfee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="NonGovt Fee     :"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/f1nongovt"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="200dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="fee"
+            android:textSize="16dp" />
+
+
+        <TextView
+            android:id="@+id/payment8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Status                 :"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/f1status"
+            android:layout_width="247dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="220dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="sans-serif"
+            android:text="paid"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/thirdbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="570dp"
+            android:backgroundTint="#286A9E"
+            android:text="Tap to Pay Your 3rd Year Fees Now"
+            android:textSize="14dp" />
+
+    </FrameLayout>
+</ScrollView>

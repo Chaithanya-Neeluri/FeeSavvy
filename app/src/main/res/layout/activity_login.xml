@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cddff7">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cddff7"
+        android:minHeight="800dp"
+        tools:context=".Login">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="439dp"
+            android:layout_height="317dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.036"
+            app:srcCompat="@drawable/ad" />
+
+        <TextView
+            android:layout_width="279dp"
+            android:layout_height="35dp"
+            android:text="Admin Login"
+            android:textAlignment="center"
+            android:textColor="#02233E"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.468" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:hint="Admin ID"
+            android:textColorHint="#0B0A0A"
+            app:hintTextAppearance="@style/TextAppearance.AppCompat.Body2"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.537"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.55"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/id"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/account"
+                android:drawablePadding="10dp"
+                android:maxLength="15"
+                android:textColor="#191818"
+                android:textColorHint="#0B0A0A"
+                android:textIsSelectable="false"
+                android:textSize="14dp"
+                tools:ignore="SpeakableTextPresentCheck,TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginBottom="148dp"
+            android:hint="College Code"
+            android:textColorHint="#0B0A0A"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout"
+            app:layout_constraintVertical_bias="0.129">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/college"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:hint="Password"
+            android:textColorHint="#0B0A0A"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.539"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2"
+            app:layout_constraintVertical_bias="0.092"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#0B0A0A">
+
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_style"
+                android:inputType="textPassword"
+                android:maxLength="20"
+                android:textColor="#191818"
+                android:textColorHint="#0B0A0A"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/login"
+            android:layout_width="108dp"
+            android:layout_height="49dp"
+            android:backgroundTint="#286A9E"
+            android:text="Login"
+            android:textColor="#EFECEC"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintVertical_bias="0.288" />
+
+        <TextView
+            android:id="@+id/Sigp"
+            android:layout_width="230dp"
+            android:layout_height="22dp"
+            android:text="Don't have an account?"
+            android:textColor="#0B0A0A"
+            android:textSize="13dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.707"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/login"
+            app:layout_constraintVertical_bias="0.075"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/SignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:paddingLeft="5dp"
+            android:text="SignUp"
+            android:textColor="#133E60"
+            android:textSize="13dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/Sigp"
+            app:layout_constraintEnd_toEndOf="@+id/Sigp"
+            app:layout_constraintHorizontal_bias="0.698"
+            app:layout_constraintStart_toStartOf="@+id/Sigp"
+            app:layout_constraintTop_toTopOf="@+id/Sigp"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/arrow"
+            android:layout_width="40dp"
+            android:layout_height="33dp"
+            android:background="@drawable/arrow"
+            android:backgroundTint="#061B25"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.043"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.022" />
+
+        <TextView
+            android:id="@+id/Forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Forgot password?"
+            android:textColor="#133E60"
+            android:textSize="12dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.831"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <ProgressBar
+            android:id="@+id/verificationProgressBar"
+            android:layout_width="103dp"
+            android:layout_height="55dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.535"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintVertical_bias="0.196" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</ScrollView>

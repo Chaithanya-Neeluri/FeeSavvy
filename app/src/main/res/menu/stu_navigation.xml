@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title="Profile"
+        android:id="@+id/profile"
+        android:icon="@drawable/account1"/>
+    <item
+        android:title="Payment"
+        android:id="@+id/payment"
+        android:icon="@drawable/payment"/>
+    <item
+        android:title="FeedBack"
+        android:id="@+id/dashboard"
+        android:icon="@drawable/feedback"/>
+    <item
+        android:title="About"
+        android:id="@+id/users"
+        android:icon="@drawable/info"/>
+    <item
+        android:title="logout"
+        android:id="@+id/logout"
+        android:icon="@drawable/logout"/>
+
+</menu>

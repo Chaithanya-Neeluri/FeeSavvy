@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DashBoardFragment">
+        <!-- TODO: Update blank fragment layout -->
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:width="0dp"
+            android:height="0dp"
+            android:background="#FFFFF5"
+            android:fontFamily="monospace"
+            android:paddingTop="8dp"
+            android:text="Feedback"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="359dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="80dp"
+            android:hint="Subject">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/sub"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="sans-serif"
+
+                    android:minHeight="48dp"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    tools:ignore="TouchTargetSizeCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="160dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="sans-serif"
+            android:text="Enter Your Feedback Below"
+            android:textSize="14dp"
+            android:textStyle="bold"
+            tools:ignore="TextSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="353dp"
+            android:layout_height="193dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="200dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/feedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="start"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginRight="25dp"
+                    android:fontFamily="sans-serif"
+                    android:textSize="13dp"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="420dp"
+            android:backgroundTint="#286A9E"
+            android:text="Submit"
+            android:fontFamily="sans-serif"
+            tools:ignore="TextContrastCheck" />
+
+
+</FrameLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/adminsignup"
+        android:minHeight="800dp"
+        tools:context=".SignUp">
+
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="273dp"
+            android:layout_height="51dp"
+            android:text="SignUp"
+            android:textAlignment="center"
+            android:textColor="#02233E"
+            android:textSize="24sp"
+            android:textStyle="bold"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.15" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Name"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="32dp"
+            android:hint="Name"
+            android:textColorHint="#0B0A0A"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            tools:ignore="HardcodedText,MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/account"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="RtlHardcoded,TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Id"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:hint="Admin ID"
+            android:textColorHint="#0B0A0A"
+            app:hintAnimationEnabled="true"
+            app:hintEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/adminid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/admin"
+                android:drawablePadding="10dp"
+                android:inputType="text"
+                android:maxLength="15"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="RtlHardcoded,TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/collegecode"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:hint="College Code"
+            android:textColorHint="#0B0A0A"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Id"
+            tools:ignore="HardcodedText">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/college"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_style"
+                android:digits="0,1,2,3,4,5,6,7,8,9"
+                android:drawableLeft="@drawable/college"
+                android:drawablePadding="10dp"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="RtlHardcoded,TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/mobile"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:hint="Mobile Number"
+            android:textColorHint="#0B0A0A"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/collegecode">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/phone"
+                android:drawablePadding="10dp"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enpass"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:hint="Enter Password"
+            android:textColorHint="#0B0A0A"
+            app:hintEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.504"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mobile"
+
+            app:passwordToggleTint="#0B0A0A"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enterpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/keylock"
+                android:drawablePadding="10dp"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/confirmpass"
+            android:layout_width="296dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="16dp"
+            android:hint="Confirm Password"
+            android:textColorHint="#0B0A0A"
+            app:hintEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/enpass"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="#0B0A0A"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/confirmpassword"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/et_style"
+                android:inputType="textPassword"
+                android:maxLength="10"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/signbtn"
+            android:layout_width="128dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#286A9E"
+            android:text="SignUp"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/confirmpass"
+            tools:ignore="HardcodedText,TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/login"
+            android:layout_width="212dp"
+            android:layout_height="23dp"
+            android:layout_marginBottom="36dp"
+            android:text="Do you have an account?"
+            android:textColor="#0B0A0A"
+            android:textSize="12dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.597"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signbtn"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+        <TextView
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textColor="#062B49"
+            android:textSize="12dp"
+            android:textStyle="bold|italic"
+            app:layout_constraintBottom_toBottomOf="@+id/login"
+            app:layout_constraintEnd_toEndOf="@+id/login"
+            app:layout_constraintHorizontal_bias="0.769"
+            app:layout_constraintStart_toStartOf="@+id/login"
+            app:layout_constraintTop_toTopOf="@+id/login"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="TextSizeCheck" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

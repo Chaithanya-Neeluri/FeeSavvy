@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="67dp"
+        android:layout_height="39dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrow" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="236dp"
+        android:layout_height="40dp"
+        android:gravity="center"
+        android:text="Enter Your"
+        android:textColor="#0D0E10"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Verification Code"
+        android:textColor="#0D0E10"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="246dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="We sent a verification code"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="to"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/mobile"
+        android:layout_width="96dp"
+        android:layout_height="17dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:text="91-7842460120"
+        android:textColor="#575151"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="305dp"
+        android:layout_height="240dp"
+        app:layout_constraintBottom_toTopOf="@+id/ot1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:srcCompat="@drawable/loginotp" />
+
+    <EditText
+        android:id="@+id/ot1"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/ot2"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0D0E10"
+        app:layout_constraintEnd_toStartOf="@+id/ot2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/ot2"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/ot3"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0D0E10"
+        app:layout_constraintEnd_toStartOf="@+id/ot3"
+        app:layout_constraintStart_toEndOf="@+id/ot1"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/ot3"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/ot4"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0D0E10"
+        app:layout_constraintEnd_toStartOf="@+id/ot4"
+        app:layout_constraintStart_toEndOf="@+id/ot2"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/ot4"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/ot5"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0D0E10"
+        app:layout_constraintEnd_toStartOf="@+id/ot5"
+        app:layout_constraintStart_toEndOf="@+id/ot3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/ot5"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/ot6"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0D0E10"
+        app:layout_constraintEnd_toStartOf="@+id/ot6"
+        app:layout_constraintStart_toEndOf="@+id/ot4"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+    <!-- Repeat similar layouts for ot3, ot4, ot5, ot6 -->
+
+    <EditText
+        android:id="@+id/ot6"
+        android:layout_width="48dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/et_style"
+        android:ems="10"
+        android:inputType="number"
+        android:maxLength="1"
+        android:nextFocusForward="@+id/ot1"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColor="#0D0E10"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ot5"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="340dp"
+        android:layout_height="52dp"
+        android:backgroundTint="#316187"
+        android:text="Verify"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.45"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ot6"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="63dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="96dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

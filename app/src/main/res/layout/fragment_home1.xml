@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="159dp"
+        android:layout_height="150dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/nav_stu1" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="200dp"
+        android:fontFamily="sans-serif"
+        android:text="E-mail:feesavvy21@gmail.com"
+
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <View
+        android:id="@+id/dashedLineView"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="225dp"
+        android:background="@drawable/dashed" />
+    <View
+        android:id="@+id/dashedLineView1"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="185dp"
+        android:background="@drawable/dashed" />
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="185dp"
+        android:backgroundTint="#FFFFFF"
+        android:src="@drawable/email"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="240dp"
+        android:fontFamily="sans-serif"
+        android:text="Vission"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="265dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:text="To become the leading global platform for fee management in the education sector, setting new standards for financial efficiency,accessibility, and user satisfaction, while positively impacting the lives of millions of students and parents."
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="340dp"
+        android:fontFamily="sans-serif"
+        android:text="Mission"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="370dp"
+        android:layout_marginRight="10dp"
+        android:fontFamily="sans-serif"
+        android:text="To empower educational institutions,students,and parents by simplifying and optimizing fee management through our FeeSavvy app, fostering financial transparency,and enhancing the overall educational experience."
+
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="450dp"
+        android:fontFamily="sans-serif"
+        android:text="Objectives"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="480dp"
+        android:fontFamily="sans-serif"
+        android:text="Financial Transparency"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="500dp"
+        android:fontFamily="sans-serif"
+        android:text="Efficiency and Convenience"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="520dp"
+        android:fontFamily="sans-serif"
+        android:text="Client Satisfaction"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="540dp"
+        android:fontFamily="sans-serif"
+        android:text="Revenue Generation"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+    <TextView
+        android:id="@+id/textView15"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="560dp"
+        android:fontFamily="sans-serif"
+        android:text="Educational Impact"
+        android:textSize="13dp"
+        tools:ignore="TextSizeCheck" />
+
+</FrameLayout>
+
+
+
+

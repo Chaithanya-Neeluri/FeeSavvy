@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/addstudent"
+        android:minHeight="725dp"
+        tools:context=".HomeFragment">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/pinno"
+            android:layout_width="300dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="12dp"
+            android:hint="Pin Number"
+            android:textColorHint="#0B0A0A"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Name">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Pinno"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/keylock"
+                android:drawablePadding="15dp"
+                android:inputType="text"
+                android:maxLength="12"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="DuplicateClickableBoundsCheck,TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/Name"
+            android:layout_width="295dp"
+            android:layout_height="58dp"
+            android:layout_marginTop="32dp"
+            android:textColorHint="#0B0A0A"
+            app:hintAnimationEnabled="true"
+            app:hintTextColor="#0B0A0A"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.521"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView8"
+            tools:ignore="MissingConstraints">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:drawableLeft="@drawable/account"
+                android:drawablePadding="15dp"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:maxLength="30"
+                android:textColor="#191818"
+                android:textSize="14dp"
+                tools:ignore="TextSizeCheck,TextSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="177dp"
+            android:layout_height="44dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="56dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Add a Student"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="333dp"
+            android:layout_height="46dp"
+            android:layout_marginBottom="96dp"
+            android:backgroundTint="#286A9E"
+            android:text="Add "
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout3"
+            app:layout_constraintVertical_bias="0.602"
+            tools:ignore="TouchTargetSizeCheck,TextSizeCheck" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout1"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="295dp"
+            android:layout_height="54dp"
+            android:layout_margin="16dp"
+            android:hint="Select Year"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout2">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt1"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:inputType="none"
+                android:textSize="14dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="297dp"
+            android:layout_height="53dp"
+            android:layout_margin="16dp"
+            android:layout_marginTop="16dp"
+            android:hint="Select Branch"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinno">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/et_style"
+                android:inputType="none"
+                android:textSize="14dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout3"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="295dp"
+            android:layout_height="54dp"
+            android:layout_margin="16dp"
+            android:hint="Select Type of Admission"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.525"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayout1">
+
+            <AutoCompleteTextView
+                android:id="@+id/auto_complete_txt3"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/et_style"
+                android:inputType="none"
+                android:textSize="12dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <ProgressBar
+            android:id="@+id/verificationProgressBar"
+            android:layout_width="87dp"
+            android:layout_height="53dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.785" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
+
+
+

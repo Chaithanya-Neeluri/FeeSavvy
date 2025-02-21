@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn = "navigation_view">
+
+
+    <group
+        android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home1"
+            android:icon="@drawable/nav_house"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/dcme"
+            android:title="DCME" />
+
+        <item
+            android:id="@+id/nav_share"
+            android:icon="@drawable/dece"
+            android:title="DECE" />
+
+        <item
+            android:id="@+id/nav_about"
+            android:icon="@drawable/dme"
+            android:title="DME" />
+        <item
+            android:id="@+id/nav_eee"
+            android:icon="@drawable/deee"
+            android:title="DEEE" />
+
+    </group>
+    <item android:title="">
+        <menu>
+
+            <item
+                android:id="@+id/nav_home"
+                android:icon="@drawable/addstu"
+                android:title="Add a Student" />
+            <item
+                android:id="@+id/nav_pin"
+                android:icon="@drawable/pin"
+                android:title="View By PIN NO" />
+            <item
+                android:id="@+id/nav_upgrade"
+                android:icon="@drawable/upgrade"
+                android:title="Update Students" />
+            <item
+                android:id="@+id/nav_detain"
+                android:icon="@drawable/baseline_delete_sweep_24"
+                android:title="Detain" />
+            <item
+                android:id="@+id/nav_notification"
+                android:icon="@drawable/notification"
+                android:title="Notifications" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/nav_logout"
+                android:title="Logout"/>
+        </menu>
+
+    </item>
+
+</menu>
