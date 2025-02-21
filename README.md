@@ -55,8 +55,8 @@ Fee Savvy is a comprehensive Android-based fee management system designed specif
 ### Mobile Device Requirements
 - Android Operating System
 - Internet connectivity
-- Minimum storage space: [Specify size]
-- Recommended RAM: [Specify size]
+- Minimum storage space: 16GB
+- Recommended RAM: 4GB
 
 ### Server Requirements
 - Firebase account setup
@@ -67,7 +67,7 @@ Fee Savvy is a comprehensive Android-based fee management system designed specif
 
 1. Clone the repository
 bash
-git clone [repository-url]
+git clone https://github.com/Chaithanya-Neeluri/FeeSavvy
 
 
 2. Open the project in Android Studio
@@ -122,8 +122,8 @@ We welcome contributions to improve Fee Savvy. Please follow these steps:
 
 
 ## Contact Information
-mail:neelurichaithanya@gmail.com
-ph no;7842460120
+neelurichaithanya@gmail.com
+7842460120
 
 ## Acknowledgments
 -S. Rajith Bhargav
